@@ -1,5 +1,5 @@
-resource "aws_security_group" "sg_default_webserver" {
-  name        = "sg_default_webserver"
+resource "aws_security_group" "sg_DefaultWebserver" {
+  name        = "sg_DefaultWebserver"
   description = "Allow all outbound traffic and inbound 22/80"
 
   ingress {
@@ -25,7 +25,7 @@ resource "aws_security_group" "sg_default_webserver" {
   }
 
   tags {
-    Name        = "sg-webserver-churrops"
+    Name        = "sg_DefaultWebserver"
     Provisioner = "terraform"
 
   }
